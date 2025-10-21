@@ -26,9 +26,40 @@ const imperialScript = Imperial_Script({
   weight: "400",
 });
 export const metadata: Metadata = {
-  title: "Thiệp Cưới Quang Vinh & Mỹ Anh",
-  description: "Thư mời tiệc cưới Quang Vinh & Mỹ Anh - 26.10.2025",
+  title: "Thiệp Cưới Tiến Đạt & Mỹ Linh",
+  description: "Thư mời tiệc cưới Tiến Đạt & Mỹ Linh - 26.10.2025",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicons/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicons/favicon-16x16.png",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/favicons/apple-touch-icon.png",
+    },
+  ],
+  openGraph: {
+    title: "Thiệp Cưới Tiến Đạt & Mỹ Linh",
+    description: "Thư mời tiệc cưới Tiến Đạt & Mỹ Linh - 26.10.2025",
+    images: [
+      {
+        url: "/album/anh-chinh.JPG",
+        width: 1200,
+        height: 630,
+        alt: "Thiệp Cưới Tiến Đạt & Mỹ Linh",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
