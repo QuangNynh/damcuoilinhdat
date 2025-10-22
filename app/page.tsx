@@ -203,11 +203,11 @@ export default function Home() {
       <div data-aos="fade-up" className="px-3 sm:px-4 py-3 sm:py-4 md:py-6">
         <Calendar className="w-full h-full" />
       </div>
-      <div className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl no-scrollbar overflow-hidden pt-3">
+      <div data-aos="fade-down" className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl no-scrollbar overflow-hidden pt-3">
         <p className="font-imperial-script text-center ">Địa điểm tổ chức</p>
       </div>
       <div className="px-3 flex items-center justify-center flex-col gap-3 sm:gap-4">
-        <div className="flex items-center justify-center flex-col p-6">
+        <div data-aos="fade-right" className="flex items-center justify-center flex-col p-6">
           <div className="text-xl lg:text-2xl text-center">
             <p className="font-imperial-script text-center ">Lễ thành hôn tại gia đình nhà trai </p>
             <p className="font-imperial-script text-center ">9H00 - 10H</p>
@@ -216,10 +216,12 @@ export default function Home() {
             Xóm Trại 4, số nhà 33, ngõ 482, khu phố Đa Hội, P.Phù Khê, Bắc Ninh
           </p>
         </div>
-        <div className="w-full max-w-full overflow-hidden">
+        <div data-aos="fade-left" className="w-full max-w-full overflow-hidden">
           <div className="text-xl lg:text-2xl text-center">
             <p className="font-imperial-script text-center ">Tiệc mừng lễ thành hôn </p>
-            <p className="font-imperial-script text-center ">11H30 - 13H00</p>
+            <p className=" text-center ">
+              <span className=" font-imperial-script">11H30</span> - <span className="text-base font-mono">tại NHÀ HÀNG NGỌC ANH</span>
+            </p>
           </div>
           <p className="text-gray-600 text-sm sm:text-sm md:text-base text-center pb-5 px-4">
             SN 547 - Đường Lý Thường Kiệt Khu Phố Đa Hội - P.Phù Khê - Bắc Ninh
