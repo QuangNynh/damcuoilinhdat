@@ -55,11 +55,11 @@ const PhotoAlbum = () => {
   ];
 
   return (
-    <div className="px-3 sm:px-4 py-3 sm:py-4 md:py-6">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6">
+    <div className="px-3 sm:px-4 py-3 sm:py-4 md:py-6 no-scrollbar">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 lg:gap-6 no-scrollbar overflow-hidden">
         {photos.map((photo, index) => (
           <div key={index} className="relative group cursor-pointer" data-aos={photo.aos}>
-            <div className="aspect-[3/4] relative overflow-hidden rounded-md sm:rounded-lg shadow-md sm:shadow-lg hover:shadow-lg sm:hover:shadow-xl transition-all duration-300">
+            <div className="aspect-[3/4] relative overflow-hidden rounded-md sm:rounded-lg shadow-md sm:shadow-lg hover:shadow-lg sm:hover:shadow-xl transition-all duration-300 no-scrollbar">
               <Image
                 src={photo.src}
                 alt={photo.alt}

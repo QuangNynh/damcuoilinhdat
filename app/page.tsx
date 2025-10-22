@@ -18,7 +18,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="md:h-screen h-[70vh] relative overflow-hidden overflow-x-hidden">
         {/* Background Image */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-3/4 md:w-2/3 lg:w-2/3 z-0">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-[55%] w-[90%] sm:w-3/4 md:w-2/3 lg:w-2/3 z-0">
           <img
             src="/tach-nen.png"
             alt="Background"
@@ -31,12 +31,9 @@ export default function Home() {
         {/* Content nằm trên */}
         <div className="relative z-10 flex items-end justify-center md:h-full h-[70vh]">
           {/* Content */}
-          <div className="relative z-10 flex items-end justify-center full">
+          <div className="relative z-10 flex items-end justify-center ">
             <div className="text-center px-3 sm:px-4 pb-4 sm:pb-6 md:pb-8 lg:pb-12 xl:pb-16">
-              <h1
-                data-aos="zoom-in"
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4 drop-shadow-lg"
-              >
+              <h1 data-aos="zoom-in" className="text-2xl sm:text-3xl lg:text-4xl  font-bold mb-1 sm:mb-2 md:mb-3 lg:mb-4 drop-shadow-lg">
                 <span className="font-imperial-script">Tiến Đạt</span>
                 <span className="mx-1 sm:mx-2 md:mx-3">-</span>
                 <span className="font-imperial-script">Mỹ Linh</span>
@@ -88,7 +85,7 @@ export default function Home() {
       </div>
 
       {/* Couple Section */}
-      <div className="px-3 sm:px-4 py-3 sm:py-4 md:py-6 lg:py-8">
+      <div className="px-3 lg:px-20 py-3 sm:py-4 md:py-6 lg:py-8">
         <div className="flex justify-between items-center text-center pb-2 text-xl lg:text-4xl overflow-hidden h-auto">
           <div className="w-[40%] no-scrollbar">
             <p data-aos="fade-down" className="font-semibold mb-1 sm:mb-2 md:mb-3 lg:mb-4 h-auto">
@@ -119,10 +116,10 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-between items-center gap-2 sm:gap-2 md:gap-3 lg:gap-4 py-2 sm:py-2 md:py-3 lg:py-4 overflow-hidden">
-          <div data-aos="fade-right" className="w-[45%] h-[30vh]  md:h-[65vh] lg:h-[70vh] relative">
+          <div data-aos="fade-right" className="w-[45%] h-[30vh]  md:h-[65vh] lg:h-[70vh] relative no-scrollbar overflow-hidden">
             <Image src="/chu-re.JPG" alt="chu-re" fill className="object-contain" />
           </div>
-          <div data-aos="fade-left" className="w-[45%] h-[30vh]  md:h-[65vh] lg:h-[70vh] relative">
+          <div data-aos="fade-left" className="w-[45%] h-[30vh]  md:h-[65vh] lg:h-[70vh] relative no-scrollbar overflow-hidden">
             <Image src="/co-dau.JPG" alt="co-dau" fill className="object-contain" />
           </div>
         </div>
@@ -141,7 +138,7 @@ export default function Home() {
       </div>
       <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 p-1 sm:p-2 overflow-hidden">
         {/* Trái */}
-        <div data-aos="fade-right" className="basis-[25%] sm:basis-[20%] min-w-0">
+        <div data-aos="fade-right" className="basis-[40%] sm:basis-[25%] min-w-0 no-scrollbar overflow-hidden">
           <Image
             src="/album/anh-phu-2.JPG"
             alt="thu-moi"
@@ -153,7 +150,7 @@ export default function Home() {
         </div>
 
         {/* Giữa (rộng hơn -> cao hơn) */}
-        <div data-aos="zoom-in" className="basis-[50%] sm:basis-[30%] min-w-0">
+        <div data-aos="zoom-in" className="basis-[50%] sm:basis-[30%] min-w-0 no-scrollbar overflow-hidden">
           <Image
             src="/album/anh-phu.JPG"
             alt="thu-moi"
@@ -165,7 +162,7 @@ export default function Home() {
         </div>
 
         {/* Phải */}
-        <div data-aos="fade-left" className="basis-[25%] sm:basis-[20%] min-w-0">
+        <div data-aos="fade-left" className="basis-[40%] sm:basis-[25%] min-w-0 no-scrollbar overflow-hidden">
           <Image
             src="/album/anhphu-3.JPG"
             alt="thu-moi"
@@ -227,11 +224,8 @@ export default function Home() {
           ></iframe>
         </div>
       </div>
-      <div className="px-3 sm:px-4 py-3 sm:py-4 md:py-6">
-        <p
-          data-aos="fade-down"
-          className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-imperial-script text-center mb-3 sm:mb-4 md:mb-6"
-        >
+      <div className="px-3 sm:px-4 py-3 sm:py-4 md:py-6 text-2xl sm:text-3xl md:text-3xl">
+        <p data-aos="fade-down" className=" lg:text-4xl xl:text-5xl font-imperial-script text-center mb-3 sm:mb-4 md:mb-6">
           Album ảnh cưới
         </p>
         <PhotoAlbum />
