@@ -94,8 +94,8 @@ export default function Home() {
             <p data-aos="fade-down" className="font-semibold mb-1 sm:mb-2 md:mb-3 lg:mb-4 h-auto">
               Chú Rể
             </p>
-            <p data-aos="fade-up" className="font-monsieur h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16">
-              Quang Vinh
+            <p data-aos="fade-up" className="font-imperial-script h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16">
+              Tiến Đạt
             </p>
           </div>
           <div className="flex-1 flex justify-center overflow-hidden">
@@ -113,8 +113,8 @@ export default function Home() {
             <p data-aos="fade-down" className="font-semibold py-2">
               Cô Dâu
             </p>
-            <p data-aos="fade-up" className="font-monsieur h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16">
-              Mỹ Anh
+            <p data-aos="fade-up" className="font-imperial-script h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16">
+              Mỹ Linh
             </p>
           </div>
         </div>
