@@ -209,13 +209,13 @@ export default function Home() {
       <div className="px-3 flex items-center justify-center flex-col gap-3 sm:gap-4">
         <div className="flex items-center justify-center flex-col">
           <div className="text-xl lg:text-2xl text-center">
-            <p className="font-imperial-script text-center ">Tại gia đình nhà trai</p>
+            <p className="font-imperial-script text-center ">Tại gia đình nhà trai - 9H30</p>
           </div>
           <p className="text-gray-600 text-sm sm:text-sm md:text-base">Xóm Trại 4, số nhà 33, ngõ 482, khu phố Đa Hội, P.Phù Khê, Bắc Ninh</p>
         </div>
         <div className="w-full max-w-full overflow-hidden  p-6">
           <div className="text-xl lg:text-2xl text-center">
-            <p className="font-imperial-script text-center ">Tiệc mừng lễ thành hôn</p>
+            <p className="font-imperial-script text-center ">Tiệc mừng lễ thành hôn - 11H30</p>
           </div>
           <p className="text-gray-600 text-sm sm:text-sm md:text-base text-center pb-5">
             SN 547 - Đường Lý Thường Kiệt Khu Phố Đa Hội - P.Phù Khê - Bắc Ninh

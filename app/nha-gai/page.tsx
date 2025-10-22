@@ -46,7 +46,7 @@ export default function Home() {
               </p>
               <hr data-aos="fade-right" className="my-1 sm:my-2 md:my-3 lg:my-4 border-black mx-auto w-8 sm:w-10 md:w-12 lg:w-16 xl:w-20" />
               <p data-aos="fade-left" className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl drop-shadow-md mb-1 sm:mb-2">
-                CHỦ NHẬT - 8H30
+                CHỦ NHẬT - 7H00
               </p>
               <p
                 data-aos="fade-right"
