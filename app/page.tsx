@@ -287,32 +287,37 @@ export default function Home() {
           }
         }}
       >
-        <div className="bg-white p-6 rounded-lg shadow-2xl max-w-sm mx-4 transform transition-all duration-300 scale-100">
-          <div className="flex justify-between items-center mb-4">
-            <h3 className="text-lg font-semibold">QR Code</h3>
-            <button
-              onClick={() => {
-                const qrModal = document.getElementById("qr-modal");
-                if (qrModal) {
-                  qrModal.classList.add("hidden");
-                }
-              }}
-              className="text-gray-500 hover:text-gray-700 text-xl transition-colors duration-200"
-            >
-              ✕
-            </button>
-          </div>
-          <div className="text-center">
-            <div className="bg-gray-100 p-4 rounded-lg mb-4">
-              {/* Placeholder for QR Code - bạn có thể thay thế bằng QR code thực tế */}
-              <div className="w-48 h-48 bg-gray-300 rounded flex items-center justify-center text-gray-600 no-scrollbar">
-                <Image src="/qr.jpeg" alt="qr" width={200} height={400} />
-              </div>
+        <div className="flex items-center justify-center h-full">
+          <div className="bg-white p-6 rounded-lg shadow-2xl max-w-sm mx-4 transform transition-all duration-300 scale-100">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-semibold">QR Code</h3>
+              <button
+                onClick={() => {
+                  const qrModal = document.getElementById("qr-modal");
+                  if (qrModal) {
+                    qrModal.classList.add("hidden");
+                  }
+                }}
+                className="text-gray-500 hover:text-gray-700 text-xl transition-colors duration-200"
+              >
+                ✕
+              </button>
             </div>
-            <p className="text-sm text-gray-600">Quét mã QR để xem thông tin</p>
+            <div className="text-center">
+              <div className="bg-gray-100 p-4 rounded-lg mb-4">
+                {/* Placeholder for QR Code - bạn có thể thay thế bằng QR code thực tế */}
+                <div className="w-48 h-48 bg-gray-300 rounded flex items-center justify-center text-gray-600 no-scrollbar">
+                  <Image src="/qr.jpeg" alt="qr" width={200} height={400} />
+                </div>
+              </div>
+              <p className="text-sm text-gray-600">Quét mã QR để xem thông tin</p>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Footer spacing để đảm bảo có thể scroll đến cuối */}
+      <div className="h-2"></div>
     </div>
   );
 }
