@@ -35,18 +35,18 @@ export default function MusicPlayer() {
         buttonRef.current.click();
         setHasAutoStarted(true);
         // Remove the event listener after first click
-        window.removeEventListener("scroll", clickWindow);
+        window.removeEventListener("click", clickWindow);
       }
     };
-    window.addEventListener("scroll", clickWindow);
+    window.addEventListener("click", clickWindow);
     return () => {
-      window.removeEventListener("scroll", clickWindow);
+      window.removeEventListener("click", clickWindow);
     };
   }, [hasAutoStarted, isPlaying]);
 
   return (
     <>
-      <audio ref={audioRef} src="/xung-doi.mp3" loop playsInline style={{ display: "none" }} />
+      <audio ref={audioRef} src="/xung-doi.mp3" loop playsInline autoPlay style={{ display: "none" }} />
 
       <button
         ref={buttonRef}
