@@ -226,15 +226,15 @@ export default function Home() {
       <div data-aos="fade-up" className="px-3 sm:px-4 py-3 sm:py-4 md:py-6">
         <Calendar className="w-full h-full" />
       </div>
-      <div className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl no-scrollbar overflow-hidden">
+      <div data-aos="fade-down" className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl no-scrollbar overflow-hidden">
         <p className="font-imperial-script text-center ">Địa điểm tổ chức</p>
       </div>
       <div className="px-3 flex items-center justify-center flex-col gap-3 sm:gap-4">
-        <div className="flex items-center justify-center flex-col">
+        <div data-aos="fade-right" className="flex items-center justify-center flex-col">
           <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-imperial-script text-center">Tại gia đình nhà gái</div>
           <div className="text-gray-600 text-sm sm:text-sm md:text-base">Số 9 Huỳnh Thúc Kháng, Hà Đông, Hà Nội</div>
         </div>
-        <div className="w-full max-w-full overflow-hidden">
+        <div data-aos="fade-left" className="w-full max-w-full overflow-hidden">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2074.033295573681!2d105.77317625117148!3d20.972210263868007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453295c419a7d%3A0x28a5cb5649472704!2zOSBQLiBIdeG7s25oIFRow7pjIEtow6FuZywgUC4gUXVhbmcgVHJ1bmcsIEjDoCDEkMO0bmcsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1761073798742!5m2!1svi!2s"
             width="100%"
@@ -253,7 +253,7 @@ export default function Home() {
         <PhotoAlbum />
       </div>
 
-      <div className="relative w-full lg:h-[60vh] h-[50vh] overflow-hidden ">
+      <div className="relative w-full lg:h-[65vh] h-[50vh] overflow-hidden ">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <Image src="/album/anh-cuoi.JPG" alt="anh-cuoi" fill className="object-cover object-top opacity-20" />
@@ -262,7 +262,7 @@ export default function Home() {
         {/* Overlay */}
 
         {/* QR Code Button */}
-        <div data-aos="fade-up" className="relative z-10 flex flex-col items-center justify-center h-full">
+        <div data-aos="fade-up" className="relative z-10 flex flex-col items-center justify-center h-full py-6 md:py-8 lg:py-10">
           <div className="text-center text-2xl md:text-3xl  font-imperial-script drop-shadow-md mb-1 sm:mb-2 md:mb-3 lg:w-1/2 text-black/80 px-3 sm:px-4 md:px-6 lg:px-8">
             <h1 className="text-center text-2xl md:text-5xl  drop-shadow-md">
               Chân thành cảm ơn quý vị – sự hiện diện của quý vị là niềm vinh hạnh lớn đối với chúng tôi.
