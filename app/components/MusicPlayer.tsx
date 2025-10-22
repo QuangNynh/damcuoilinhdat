@@ -35,12 +35,12 @@ export default function MusicPlayer() {
         buttonRef.current.click();
         setHasAutoStarted(true);
         // Remove the event listener after first click
-        window.removeEventListener("click", clickWindow);
+        window.removeEventListener("scroll", clickWindow);
       }
     };
-    window.addEventListener("click", clickWindow);
+    window.addEventListener("scroll", clickWindow);
     return () => {
-      window.removeEventListener("click", clickWindow);
+      window.removeEventListener("scroll", clickWindow);
     };
   }, [hasAutoStarted, isPlaying]);
 
