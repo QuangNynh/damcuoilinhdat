@@ -210,7 +210,7 @@ export default function Home() {
         <div className="flex items-center justify-center flex-col p-6">
           <div className="text-xl lg:text-2xl text-center">
             <p className="font-imperial-script text-center ">Lễ thành hôn tại gia đình nhà trai </p>
-            <p className="font-imperial-script text-center ">9H30</p>
+            <p className="font-imperial-script text-center ">9H00 - 10H</p>
           </div>
           <p className="text-gray-600 text-sm sm:text-sm md:text-base text-center ">
             Xóm Trại 4, số nhà 33, ngõ 482, khu phố Đa Hội, P.Phù Khê, Bắc Ninh
@@ -219,7 +219,7 @@ export default function Home() {
         <div className="w-full max-w-full overflow-hidden">
           <div className="text-xl lg:text-2xl text-center">
             <p className="font-imperial-script text-center ">Tiệc mừng lễ thành hôn </p>
-            <p className="font-imperial-script text-center ">11H30</p>
+            <p className="font-imperial-script text-center ">11H30 - 13H00</p>
           </div>
           <p className="text-gray-600 text-sm sm:text-sm md:text-base text-center pb-5 px-4">
             SN 547 - Đường Lý Thường Kiệt Khu Phố Đa Hội - P.Phù Khê - Bắc Ninh
@@ -270,6 +270,7 @@ export default function Home() {
             Mừng cưới
           </button>
         </div>
+        <div className="mb-8"></div>
       </div>
 
       {/* QR Code Modal */}
