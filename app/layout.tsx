@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Imperial_Script } from "next/font/google";
 import { Monsieur_La_Doulaise } from "next/font/google";
 import "./globals.css";
 import "aos/dist/aos.css";
+import MusicPlayer from "./components/MusicPlayer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,6 +77,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${monsieurLaDoulaise.variable} ${imperialScript.variable} antialiased overflow-x-hidden`}
       >
         {children}
+        <MusicPlayer />
         <script src="/scroll-animations.js" defer></script>
       </body>
     </html>

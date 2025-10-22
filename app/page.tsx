@@ -143,7 +143,7 @@ export default function Home() {
         {/* Trái */}
         <div data-aos="fade-right" className="basis-[25%] sm:basis-[20%] min-w-0">
           <Image
-            src="/anh-phu-2.JPG"
+            src="/album/anh-phu-2.JPG"
             alt="thu-moi"
             width={200}
             height={400}
@@ -155,7 +155,7 @@ export default function Home() {
         {/* Giữa (rộng hơn -> cao hơn) */}
         <div data-aos="zoom-in" className="basis-[50%] sm:basis-[30%] min-w-0">
           <Image
-            src="/anh-phu-1.JPG"
+            src="/album/anh-phu.JPG"
             alt="thu-moi"
             width={200}
             height={450}
@@ -167,7 +167,7 @@ export default function Home() {
         {/* Phải */}
         <div data-aos="fade-left" className="basis-[25%] sm:basis-[20%] min-w-0">
           <Image
-            src="/anhphu-3.JPG"
+            src="/album/anhphu-3.JPG"
             alt="thu-moi"
             width={200}
             height={400}
@@ -265,7 +265,7 @@ export default function Home() {
       {/* QR Code Modal */}
       <div
         id="qr-modal"
-        className="fixed inset-0  bg-opacity-70 backdrop-blur-sm z-50 hidden flex items-center justify-center"
+        className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-50 hidden items-center justify-center"
         onClick={(e) => {
           if (e.target === e.currentTarget) {
             const qrModal = document.getElementById("qr-modal");
