@@ -4,48 +4,56 @@ import { useState, useRef, useEffect } from "react";
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [hasAutoStarted, setHasAutoStarted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  // Try autoplay muted (policy-friendly). If blocked, user can still click the button.
 
-  useEffect(() => {
-    if (audioRef.current) {
-      audioRef.current.addEventListener("loadeddata", () => {
-        setIsLoaded(true);
-      });
+  const toggleMusic = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
 
-      audioRef.current.addEventListener("ended", () => {
-        setIsPlaying(false);
-        // Auto replay
-        if (audioRef.current) {
-          audioRef.current.currentTime = 0;
-          audioRef.current.play();
-          setIsPlaying(true);
-        }
-      });
-    }
-  }, []);
-
-  const toggleMusic = () => {
-    if (audioRef.current) {
+    try {
       if (isPlaying) {
-        audioRef.current.pause();
+        audio.pause();
         setIsPlaying(false);
       } else {
-        audioRef.current.play();
+        // ensure unmuted when user explicitly plays
+        audio.muted = false;
+        await audio.play();
         setIsPlaying(true);
       }
+    } catch (err) {
+      setIsPlaying(false);
     }
   };
+  useEffect(() => {
+    if (hasAutoStarted) return; // Don't add listener if already auto-started
+
+    const clickWindow = () => {
+      if (buttonRef.current && !isPlaying) {
+        buttonRef.current.click();
+        setHasAutoStarted(true);
+        // Remove the event listener after first click
+        window.removeEventListener("click", clickWindow);
+      }
+    };
+    window.addEventListener("click", clickWindow);
+    return () => {
+      window.removeEventListener("click", clickWindow);
+    };
+  }, [hasAutoStarted, isPlaying]);
 
   return (
     <>
-      <audio ref={audioRef} preload="auto" loop src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" style={{ display: "none" }} />
+      <audio ref={audioRef} src="/xung-doi.mp3" loop playsInline style={{ display: "none" }} />
 
       <button
+        ref={buttonRef}
         onClick={toggleMusic}
-        disabled={!isLoaded}
         className={`fixed bottom-4 right-4 z-50 w-14 h-14 rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
           isPlaying ? "bg-red-500 hover:bg-red-600 animate-pulse" : "bg-pink-500 hover:bg-pink-600"
-        } ${!isLoaded ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
+        } ${!isLoaded ? "opacity-90" : ""}`}
         title={isPlaying ? "Tắt nhạc" : "Bật nhạc - Vợ người ta"}
       >
         <div className="flex items-center justify-center text-white text-xl">
@@ -82,6 +90,8 @@ export default function MusicPlayer() {
           Vợ người ta
         </div>
       </button>
+
+      {/* Thông báo lỗi/ trạng thái nhỏ gọn (tùy chọn) */}
     </>
   );
 }

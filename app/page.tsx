@@ -203,24 +203,31 @@ export default function Home() {
       <div data-aos="fade-up" className="px-3 sm:px-4 py-3 sm:py-4 md:py-6">
         <Calendar className="w-full h-full" />
       </div>
-      <div className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl">
+      <div className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl no-scrollbar overflow-hidden">
         <p className="font-imperial-script text-center ">Địa điểm tổ chức</p>
       </div>
       <div className="px-3 flex items-center justify-center flex-col gap-3 sm:gap-4">
         <div className="flex items-center justify-center flex-col">
-          <div className="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-imperial-script text-center">Tại gia đình nhà trai</div>
-          <div className="text-gray-600 text-sm sm:text-sm md:text-base">Xóm Trại 4, số nhà 33, ngõ 482, khu phố Đa Hội, P.Phù Khê, Bắc Ninh</div>
+          <div className="text-xl lg:text-2xl text-center">
+            <p className="font-imperial-script text-center ">Tại gia đình nhà trai</p>
+          </div>
+          <p className="text-gray-600 text-sm sm:text-sm md:text-base">Xóm Trại 4, số nhà 33, ngõ 482, khu phố Đa Hội, P.Phù Khê, Bắc Ninh</p>
         </div>
-        <div className="w-full max-w-full overflow-hidden">
+        <div className="w-full max-w-full overflow-hidden  p-6">
+          <div className="text-xl lg:text-2xl text-center">
+            <p className="font-imperial-script text-center ">Tiệc mừng lễ thành hôn</p>
+          </div>
+          <p className="text-gray-600 text-sm sm:text-sm md:text-base text-center pb-5">
+            SN 547 - Đường Lý Thường Kiệt Khu Phố Đa Hội - P.Phù Khê - Bắc Ninh
+          </p>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29773.4031796804!2d105.91660474591666!3d21.125503636662827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zc-G7kSBuaMOgIDMzLCBuZ8O1IDQ4Miwga2h1IHBo4buRIMSQYSBI4buZaSwgUC5QaMO5IEtow6osIELhuq9jIE5pbmg!5e0!3m2!1svi!2s!4v1761066344847!5m2!1svi!2s"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8306.05881960179!2d105.9139244!3d21.123143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31350709554912d7%3A0x4f560b309cfa846e!2zTmjDoCBow6BuZyBOZ-G7jWMgQW5o!5e1!3m2!1svi!2s!4v1761116364936!5m2!1svi!2s"
             width="100%"
             height="300"
-            style={{ border: 0, maxWidth: "100%" }}
+            style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px]"
           ></iframe>
         </div>
       </div>
@@ -232,7 +239,7 @@ export default function Home() {
       </div>
 
       {/* QR Code Section */}
-      <div className="relative w-full h-[60vh] overflow-hidden ">
+      <div className="relative w-full lg:h-[60vh] h-[50vh] overflow-hidden ">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <Image src="/album/anh-cuoi.JPG" alt="anh-cuoi" fill className="object-cover object-top opacity-20" />
@@ -241,7 +248,12 @@ export default function Home() {
         {/* Overlay */}
 
         {/* QR Code Button */}
-        <div className="relative z-10 flex items-center justify-center h-full">
+        <div data-aos="fade-up" className="relative z-10 flex flex-col items-center justify-center h-full">
+          <div className="text-center text-2xl md:text-3xl  font-imperial-script drop-shadow-md mb-1 sm:mb-2 md:mb-3 lg:w-1/2 text-black/80 px-3 sm:px-4 md:px-6 lg:px-8">
+            <h1 className="text-center text-2xl md:text-5xl  font-monsieur-la-doulaise drop-shadow-md">
+              Chân thành cảm ơn quý vị – sự hiện diện của quý vị là niềm vinh hạnh lớn đối với chúng tôi.
+            </h1>
+          </div>
           <button
             onClick={() => {
               const qrModal = document.getElementById("qr-modal");
@@ -249,9 +261,9 @@ export default function Home() {
                 qrModal.classList.remove("hidden");
               }
             }}
-            className="bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:shadow-xl"
+            className="bg-red-400 bg-opacity-90 hover:bg-opacity-100 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:shadow-xl"
           >
-            📱 QR Code
+            Mừng cưới
           </button>
         </div>
       </div>
@@ -259,7 +271,7 @@ export default function Home() {
       {/* QR Code Modal */}
       <div
         id="qr-modal"
-        className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm z-50 hidden items-center justify-center"
+        className="fixed inset-0  bg-opacity-70 backdrop-blur-sm z-50 hidden flex items-center justify-center"
         onClick={(e) => {
           if (e.target === e.currentTarget) {
             const qrModal = document.getElementById("qr-modal");

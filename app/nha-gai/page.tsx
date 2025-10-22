@@ -177,7 +177,7 @@ export default function Home() {
       {/* Ngày cưới */}
       <div data-aos="fade-up" className="text-center px-3 sm:px-4 py-3 sm:py-4 md:py-6 lg:py-8 xl:py-10">
         <h2 className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-gray-800">
-          TIỆC MỪNG LỄ THÀNH HÔN
+          TIỆC MỪNG LỄ VU QUY
         </h2>
 
         <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 mb-2 sm:mb-3 md:mb-4">
@@ -200,12 +200,12 @@ export default function Home() {
       </div>
       <div data-aos="fade-up" className="text-center px-3 sm:px-4 py-3 sm:py-4 md:py-6 lg:py-8 xl:py-10">
         <h2 className="text-base sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold mb-2 sm:mb-3 md:mb-4 lg:mb-6 text-gray-800">
-          LỄ THÀNH HÔN
+          LỄ VU QUY
         </h2>
 
         <div className="flex items-center justify-center gap-1 sm:gap-2 md:gap-4 mb-2 sm:mb-3 md:mb-4">
           <span className="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700">Vào Lúc</span>
-          <span className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl font-bold text-gray-900">09h00</span>
+          <span className="text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl font-bold text-gray-900">07h00</span>
           <span className="text-gray-500">|</span>
           <span className="text-sm sm:text-sm md:text-base lg:text-lg text-gray-700">Chủ Nhật</span>
         </div>
@@ -226,7 +226,7 @@ export default function Home() {
       <div data-aos="fade-up" className="px-3 sm:px-4 py-3 sm:py-4 md:py-6">
         <Calendar className="w-full h-full" />
       </div>
-      <div className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl">
+      <div className="px-3 text-3xl sm:text-4xl md:text-4xl lg:text-5xl no-scrollbar overflow-hidden">
         <p className="font-imperial-script text-center ">Địa điểm tổ chức</p>
       </div>
       <div className="px-3 flex items-center justify-center flex-col gap-3 sm:gap-4">

@@ -190,6 +190,9 @@ html {
 .font-imperial-script {
   font-family: var(--font-imperial-script);
 }
+.font-monsieur-la-doulaise {
+  font-family: var(--font-monsieur-la-doulaise);
+}
 /* CSS-only Scroll-triggered Animations */
 .scroll-animate {
   opacity: 0;
