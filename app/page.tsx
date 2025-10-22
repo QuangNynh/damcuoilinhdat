@@ -215,7 +215,7 @@ export default function Home() {
         </div>
         <div className="w-full max-w-full overflow-hidden  p-6">
           <div className="text-xl lg:text-2xl text-center">
-            <p className="font-imperial-script text-center ">Tiệc mừng lễ thành hôn - 11H30</p>
+            <p className="font-imperial-script text-center "> Lễ thành hôn - 11H30</p>
           </div>
           <p className="text-gray-600 text-sm sm:text-sm md:text-base text-center pb-5">
             SN 547 - Đường Lý Thường Kiệt Khu Phố Đa Hội - P.Phù Khê - Bắc Ninh
