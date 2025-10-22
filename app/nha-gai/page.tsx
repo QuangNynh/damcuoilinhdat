@@ -253,8 +253,7 @@ export default function Home() {
         <PhotoAlbum />
       </div>
 
-      {/* QR Code Section */}
-      <div className="relative w-full h-[60vh] overflow-hidden ">
+      <div className="relative w-full lg:h-[60vh] h-[50vh] overflow-hidden ">
         {/* Background Image */}
         <div className="absolute inset-0 w-full h-full">
           <Image src="/album/anh-cuoi.JPG" alt="anh-cuoi" fill className="object-cover object-top opacity-20" />
@@ -263,7 +262,12 @@ export default function Home() {
         {/* Overlay */}
 
         {/* QR Code Button */}
-        <div className="relative z-10 flex items-center justify-center h-full">
+        <div data-aos="fade-up" className="relative z-10 flex flex-col items-center justify-center h-full">
+          <div className="text-center text-2xl md:text-3xl  font-imperial-script drop-shadow-md mb-1 sm:mb-2 md:mb-3 lg:w-1/2 text-black/80 px-3 sm:px-4 md:px-6 lg:px-8">
+            <h1 className="text-center text-2xl md:text-5xl  drop-shadow-md">
+              Chân thành cảm ơn quý vị – sự hiện diện của quý vị là niềm vinh hạnh lớn đối với chúng tôi.
+            </h1>
+          </div>
           <button
             onClick={() => {
               const qrModal = document.getElementById("qr-modal");
@@ -271,9 +275,9 @@ export default function Home() {
                 qrModal.classList.remove("hidden");
               }
             }}
-            className="bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:shadow-xl"
+            className="bg-red-400 bg-opacity-90 hover:bg-opacity-100 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition-all duration-300 hover:shadow-xl"
           >
-            📱 QR Code
+            Mừng cưới
           </button>
         </div>
       </div>
